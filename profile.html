@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SportsPal</title>
+    <link rel="icon" type="image/png" href="faviconImage/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="header">
+          <a href="home.html"> <img class="img_allign" src=logo.png width="55" height="50"></a>
+          <nav class="navbar">
+            <a href="activity.html">Activity</a>
+            <a href="profile.html">Profile</a>
+            <a href="matches.html">Matches</a>
+            <a href="settings.html">Settings</a>
+            <button class="btnsignout-popup">Sign Out</button>
+          </nav>
+      </header>
+
+
+      <div class="wrapper-profile">
+        <h1 class="profile-title">MY PROFILE</h1>
+        <form>
+          <div class="group-variants">
+            <div class="group-variant">
+              <h2 class="variant-title">FULL NAME</h2>
+              <input type="text" class="input" placeholder="Name">
+              <h2 class="variant-title">AGE</h2>
+                <input type="number" class="input" placeholder="Age" min="18" max="99">
+    
+              <h2 class="variant-title">GENDER</h2>
+              <select name="gender" class="gender-select">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+    
+              <h2 class="variant-title">GOALS</h2>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="goals" value="diseaserisk"> Decrease Chronic Disease Risk</label>
+                <label><input type="checkbox" name="goals" value="loseweight"> Lose Weight</label>
+                <label><input type="checkbox" name="goals" value="maintainweight"> Maintain Weight</label>
+                <label><input type="checkbox" name="goals" value="musclegain"> Muscle Gain</label>
+                <label><input type="checkbox" name="goals" value="stressrelief"> Stress Relief</label>
+                <label><input type="checkbox" name="goals" value="mentalhealth"> Increase Mental Health</label>
+                <label><input type="checkbox" name="goals" value="energylevels"> Increase Energy Levels</label>
+                <label><input type="checkbox" name="goals" value="wellbeing"> Increase Well Being</label>
+                <label><input type="checkbox" name="goals" value="confidence"> Increase self-confidence</label>
+              </div>
+
+              <h2 class="variant-title">SELECT INTERESTS</h2>
+            <h3 class="variant-title">SPORTS</h3>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="sports" value="running"> Running</label>
+              <label><input type="checkbox" name="sports" value="cycling"> Cycling</label>
+              <label><input type="checkbox" name="sports" value="swimming"> Swimming</label>
+              <label><input type="checkbox" name="sports" value="fitness"> Fitness</label>
+              <label><input type="checkbox" name="sports" value="golf"> Golf</label>
+              <label><input type="checkbox" name="sports" value="yoga"> Yoga</label>
+              <label><input type="checkbox" name="sports" value="badminton"> Badminton</label>
+              <label><input type="checkbox" name="sports" value="tennis"> Tennis</label>
+              <label><input type="checkbox" name="sports" value="football"> Football</label>
+              <label><input type="checkbox" name="sports" value="handball"> Handball</label>
+              <label><input type="checkbox" name="sports" value="hiking"> Hiking</label>
+              <label><input type="checkbox" name="sports" value="bouldering"> Bouldering</label>
+            </div>
+            
+              <h3 class="variant-title">HOBBIES</h3>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                <label><input type="checkbox" name="hobbies" value="cooking"> Cooking</label>
+                <label><input type="checkbox" name="hobbies" value="painting"> Painting</label>
+                <label><input type="checkbox" name="hobbies" value="gardening"> Gardening</label>
+                <label><input type="checkbox" name="hobbies" value="knitting"> Knitting</label>
+                <label><input type="checkbox" name="hobbies" value="photography"> Photography</label>
+                <label><input type="checkbox" name="hobbies" value="writing"> Writing</label>
+                <label><input type="checkbox" name="hobbies" value="singing"> Singing</label>
+                <label><input type="checkbox" name="hobbies" value="instruments"> Instruments</label>
+                <label><input type="checkbox" name="hobbies" value="video games"> Video Games</label>
+              </div>
+              <h3 class="variant-title">MUSIC</h3>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="music" value="pop"> Pop</label>
+                <label><input type="checkbox" name="music" value="rock"> Rock</label>
+                <label><input type="checkbox" name="music" value="hiphop"> Hip Hop</label>
+                <label><input type="checkbox" name="music" value="rap"> Rap</label>
+                <label><input type="checkbox" name="music" value="jazz"> Jazz</label>
+                <label><input type="checkbox" name="music" value="classical"> Classical</label>
+                <label><input type="checkbox" name="music" value="country"> Country</label>
+                <label><input type="checkbox" name="music" value="metal"> Metal</label>
+                <label><input type="checkbox" name="music" value="blues"> Blues</label>
+                <label><input type="checkbox" name="music" value="techno"> Techno</label>
+                <label><input type="checkbox" name="music" value="house"> House</label>
+              </div>
+              <h3 class="variant-title">MOVIES</h3>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="movies" value="action"> Action</label>
+                <label><input type="checkbox" name="movies" value="comedy"> Comedy</label>
+                <label><input type="checkbox" name="movies" value="drama"> Drama</label>
+                <label><input type="checkbox" name="movies" value="horror"> Horror</label>
+                <label><input type="checkbox" name="movies" value="romance"> Romance</label>
+                <label><input type="checkbox" name="movies" value="thriller"> Thriller</label>
+                <label><input type="checkbox" name="movies" value="sci-fi"> Sci-Fi</label>
+                <label><input type="checkbox" name="movies" value="fantasy"> Fantasy</label>
+                <label><input type="checkbox" name="movies" value="documentary"> Documentary</label>
+                <label><input type="checkbox" name="movies" value="animation"> Animation</label>
+              </div>
+            </div>
+          </div>
+
+        <div>
+          <button id="btn-save" class="btn-save">SAVE SETTINGS</button>
+        </div>
+
+        </form>
+	<script src="script.js"></script>
+  <script src="profile.js"></script>
+  </body>
+</html>

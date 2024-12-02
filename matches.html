@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SportsPal</title>
+    <link rel="icon" type="image/png" href="faviconImage/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <header class="header">
+        <a href="home.html"> <img class="img_allign" src="logo.png" width="55" height="50"></a>
+          <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="activity.html">Activity</a>
+            <a href="profile.html">Profile</a>
+            <a href="matches.html">Matches</a>
+            <a href="settings.html">Settings</a>
+            <button class="btnsignout-popup">Sign Out</button>
+          </nav>
+      </header>
+
+      <head>
+        <style>
+          table {
+              border-collapse: collapse;
+              width: 100%;
+          }
+  
+          th, td {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+          }
+  
+          th {
+              background-color: #f2f2f2;
+          }
+  
+          .checked {
+              color: gold;
+          }
+  
+          .unchecked {
+              color: #ddd;
+          }
+  
+        
+      </style>
+  </head>
+  </body>
+  
+  <body>  
+      <style>
+      h1 {
+          margin-top: 70px; /* Adjust the value as needed */
+          text-align: center;
+      }
+  </style>
+      <h1>Previous Match History</h1>
+      <style>
+          h1 {
+              margin-bottom: 10px; /* Adjust the value as needed */
+          }
+      </style>
+      <table>
+          <thead>
+              <tr>
+                  <th>Date</th>
+                  <th>Match</th>
+                  <th>City</th>
+                  <th>Rating</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>January 1, 2024</td>
+                  <td><a href="johndoeProfile.html"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"></a>
+                      <a style="text-decoration: none" href="johndoeProfile.html">John Doe</a> <p style="display: inline;", style="color: rgb(158, 157, 157);">#JohnDoe25</p>
+                      <span class="favorite" id="favorite1" onclick="toggleFavorite('favorite1')">
+                          <span class="fa fa-star unchecked"></span>
+                    </td>
+                    <td><img src="https://www.flagsexpo.com/main/Upload/Images/Denmark-Official-Government-Flags_206_F.jpg?im=7933bb49-feba-4963-aabb-517eff8d7132g" alt="Flag" width="30" height="20">
+                      Aalborg, Denmark</td>
+                  <td>
+                      <span class="rating" id="rating1">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                      </span>
+                  </td>
+              </tr>
+              <tr>
+                  <td>February 15, 2024</td>
+                  <td><a href="default.asp"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar"></a>
+                      <a style="text-decoration: none" href="default.asp">Bente Hansen</a> <p style="display: inline;", style="color: rgb(158, 157, 157);">#CoolBente2</p>
+                      <span class="favorite" id="favorite2" onclick="toggleFavorite('favorite2')">
+                          <span class="fa fa-star unchecked"></span>
+                        </span></td>
+                      <td>
+                          <img src="https://www.flagsexpo.com/main/Upload/Images/Denmark-Official-Government-Flags_206_F.jpg?im=7933bb49-feba-4963-aabb-517eff8d7132g" alt="Flag" width="30" height="20">
+                          Aalborg, Denmark</td>
+                  <td>
+                      <span class="rating" id="rating2">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                      </span>
+                  </td>
+              </tr>
+              <tr>
+                  <td>March 10, 2024</td>
+                  <td><a href="default.asp"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"></a>
+                      <a style="text-decoration: none" href="default.asp">Bo Larsen</a> <p style="display: inline;", style="color: rgb(158, 157, 157);">#User123</p>
+                      <span class="favorite" id="favorite3" onclick="toggleFavorite('favorite3')">
+                          <span class="fa fa-star unchecked"></span>
+                        </span></td>
+                      <td><img src="https://www.flagsexpo.com/main/Upload/Images/Denmark-Official-Government-Flags_206_F.jpg?im=7933bb49-feba-4963-aabb-517eff8d7132g" alt="Flag" width="30" height="20">
+                          København, Denmark</td>
+                  <td>
+                      <span class="rating" id="rating3">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                      </span>
+                  </td>
+              </tr>
+              <!-- Add more rows for additional matches -->
+          </tbody>
+      </table> 
+      <script src="matches.js"></script>
+  </body>
+</html>

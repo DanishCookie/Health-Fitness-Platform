@@ -1,0 +1,126 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>SportsPal</title>
+      <link rel="icon" type="image/png" href="faviconImage/favicon.png">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./visitor.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+      <header class="header">
+        <a href="#"> <img class="img_allign" src=logo.png width="60" height="50"></a>
+        <nav class="navbar">
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <section class="section">
+
+      <div class="middle-text">
+        <h2>Welcome to SportsPal!</h2>
+        <p>Connect with sports enthusiasts and find your perfect sports buddy!</p>
+      </div>
+
+      <div class="topleft-text">
+        <h2>Popularity!</h2>
+        <p>Number one most used application for finding a sportspartner as well as finding motivation!</p>
+      </div>
+
+      <div class="topright-text">
+        <h2>Fight the NEAT!</h2>
+        <p>Get started to make up for the lack of unstructered activity!</p>
+      </div>
+
+      <div class="bottomleft-text">
+        <h2>Members!</h2>
+        <p>A total of 0 people are currently using SportsPal!</p>
+      </div>
+
+      <div class="bottomright-text">
+        <h2>eksempler på fakta der skal stå på forsiden!</h2>
+        <p>Number one most used application for finding a sportspartner as well as finding motivation!</p>
+      </div>
+
+
+      
+          <div class="wrapper">
+            <span class="icon-close">
+              <i class='bx bx-x' ></i>
+            </span>
+            <div class="logreg-box">
+              
+              <!-- LOGIN-->
+              <div class="form-box login">
+                <div class="logreg-title">
+                  <h2>Login</h2>
+                  <p>Login to find the perfect pal!!!</p>
+                </div>
+
+                <form action="#">
+                  <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i>
+                    </span>
+                    <input type="text" name="UserName" id="username" autocomplete="off" required>
+                    <label for="UserName">Username</label>
+                  </div>
+
+                  <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt' ></i>
+                    </span>
+                    <input type="password" name="loginPassword" id="password" required>
+                    <label for="loginPassword">Password</label>
+                  </div>
+
+                  <button type="submit" value=""Login" class="btn" onclick="auth()"> Login</button>
+
+                  <div class="logreg-link">
+                      <p>Don't have an account? <a
+                      href="#"
+                      class="register-link">Create an account</a></p>
+
+                  </div>
+
+                </form>
+              </div>
+
+              <!-- REGISTER -->
+              <div class="form-box register">
+                <div class="logreg-title">
+                    <h2>Registration</h2>
+                    <p>Please provide the following to create your pal! </p>
+                </div>
+        
+                <form id="registrationForm">
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-face'></i></span>
+                        <input type="text" id="fullName" required>
+                        <label>Full Name</label>
+                    </div>
+        
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+        
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+        
+                    <button type="submit" class="btn">Register</button>
+        
+                    <div class="logreg-link">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    <script src="login.js"></script>
+    </body>
+  </html>

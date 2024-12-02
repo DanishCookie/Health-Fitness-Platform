@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body, h1, h2, h3, p, form {
+    font-family: 'Open Sans', sans-serif;
+}
+  
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.wrapper-profile {
+    background-color: #fff;
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.variant-title, .group-variant h2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: #000;
+}
+  
+.input, .select-element, .gender-select {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn-save {
+    background-color: #FFA500;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+@media (max-width: 768px) {
+.wrapper-profile {
+      margin: 20px;
+      padding: 20px;
+    }
+}
+
+.property-toggle {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.property-toggle label {
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.checkbox-group .group-variant {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-group label {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.property-toggle input[type="radio"] {
+    margin-right: 8px;
+}

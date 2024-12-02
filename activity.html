@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SportsPal</title>
+  <link rel="icon" type="image/png" href="faviconImage/favicon.png">
+  <link rel="stylesheet" href="activity.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="home.html"> <img class="img_allign" src="logo.png" width="55" height="50"></a>
+    <nav class="navbar">
+      <a href="activity.html">Activity</a>
+      <a href="profile.html">Profile</a>
+      <a href="matches.html">Matches</a>
+      <a href="settings.html">Settings</a>
+      <button class="btnsignout-popup">Sign Out</button>
+    </nav>
+  </header>
+
+  <div class="middle-text">
+    <h2>Plan an activity</h2>
+  </div>
+
+  <form>
+    <div id="exerciseType">
+      <h5 id="exerciseTypeH5">What activity would you like to plan?
+        <select name="exerciseType">
+          <option value="none" selected disabled hidden>Select an activity</option>
+          <option value="running">Running</option>
+          <option value="weightlifting">Weightlifting</option>
+        </select>
+      </h5>
+    </div>
+
+    <div id="date">
+      <h5 id="dateH5">Date for activity
+        <input type="date" id="Test_Date">
+      </h5>
+    </div>
+
+    <div id="timeOfDay">
+      <h5 id="timeOfDayH5">What time would you like to exercise?
+        <select name="timeOfDay">
+          <option value="none" selected disabled hidden>Select a time of day</option>
+          <option value="morning">Between 06:00 and 10:00</option>
+          <option value="noon">Between 10:00 and 14:00</option>
+          <option value="afternoon">Between 14:00 and 18:00</option>
+          <option value="night">Between 18:00 and 22:00</option>
+        </select>
+      </h5>
+    </div>
+
+    <div id="locationSelector">
+      <h5 id="locationSelectorH5">What location would you like the activity to be at?</h5>
+      <input type="radio" id="Aalborg" name="location" value="Aalborg">
+      <label for="Aalborg">Aalborg</label>
+
+      <input type="radio" id="Aarhus" name="location" value="Aarhus">
+      <label for="Aarhus">Aarhus</label>
+
+      <input type="radio" id="Odense" name="location" value="Odense">
+      <label for="Odense">Odense</label>
+
+      <input type="radio" id="Copenhagen" name="location" value="Copenhagen">
+      <label for="Copenhagen">Copenhagen</label>
+    </div>
+
+    <div id="genderToggle">
+      <input type="checkbox" id="gender" name="genderToggle" class="toggle">
+      <label for="gender">Do you wish to exercise with only with (INDSÆT her det køn som profilen har)?</label>
+    </div>
+
+
+    <button type="submit" id="submitBtn">Submit</button>
+    <button type="reset" id="resetFormBtn">Reset</button>
+  </form>
+
+  <div id="imageContainer"></div>
+
+
+  <script src="activity.js"></script>
+</body>
+</html>
